@@ -30,19 +30,19 @@ export default class Aplayer extends Component {
             }]
         };
 
-        return ( 
+        return (
             < div >
             <ReactAplayer {...props }
             onInit = { this.onInit }
             onPlay = { this.onPlay }
             onPause = { this.onPause }
-            />  
+            />
             { / * example of access aplayer instance API * / }
              <button onClick = {
                 () => this.ap.toggle()
-            } > 
-            toggle 
-            </button>  
+            } >
+            toggle
+            </button> 
             </div>
         );
     }
