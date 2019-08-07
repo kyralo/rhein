@@ -34,12 +34,11 @@
 		if (!loopTimer) loopTimer = 300
 		var ballElements = []
 		var fragment = document.createDocumentFragment()
-		
 		var ballNum = this.params.maxCount;
 		// 修改轮换播放实现方式，改为一次创建所有，通过延迟执行动画实现
 		if(playCount) {
 			ballNum = ballNum * playCount;
-		} 
+		}
 		var loop = 0
 		for(var i=0; i<ballNum; i++) {
 			var curLoop = parseInt(i/this.params.maxCount)
@@ -82,7 +81,6 @@
 				loop = curLoop
 			}
 		}
-		
 		doc.body.appendChild(fragment);
 		// 延迟删除
 		!playCount &&  _clear(ballElements)
@@ -90,14 +88,14 @@
 		setTimeout(function () {
 			for(var i=0; i<ballElements.length; i++){
 				_run(ballElements[i])
-			}	
+			}
 		}, 10)
 	}
 	function _clear(balls) {
 		setTimeout(function() {
 			for(var i=0; i<balls.length; i++){
 				doc.body.removeChild(balls[i])
-			}	
+			}
 		}, 1000 )
 	}
 	//兼容CommonJs规范

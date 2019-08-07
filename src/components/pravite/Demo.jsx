@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { testButton } from './../../redux/actionCreators';
+import ColorfulClick from '../ColorfulClick'
+
 
 class Demo extends Component {
 
@@ -20,14 +22,28 @@ class Demo extends Component {
 
     }
 
+    playColor(e) {
+        const color = new colorBall()
+        color.fly(e.clientX, e.clientY)
+    }
+
+    toucuPlayColor(e) {
+        const color = new colorBall()
+        color.fly(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+        e.stopPropagation()
+        e.preventDefault()
+    }
+
     render() {
         return (
             <div>
-                <button onClick = { this._sayHi.bind(this) } >
-                click </button>
-            <hr />
-                <p> { this.props.Test } </p>
-            <hr />
+                <div onTouchstart={this.playColor} onClick={this.playColor}>
+                    <button onClick = { this._sayHi.bind(this) } >
+                    click </button>
+                <hr />
+                    <p> { this.props.Test } </p>
+                <hr />
+                </div>
             </div>
         );
     }
