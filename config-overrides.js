@@ -9,15 +9,6 @@ module.exports = override(
     })
 );
 
-/* webpack build */
-// module.exports = override({
-//     entry:'./src/script/main.js',
-//     output:{
-//         path:'./dist/js',
-//         filename:'sakura.main.js',
-//     }
-// });
-
 /* react-app-rewire-yaml */
 
 const rewireYAML = require('react-app-rewire-yaml');
