@@ -1,14 +1,13 @@
 ._nav ul{
-	position: absolute;
-	top: 20%;
+	position: relative;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-	margin: 0;
-	padding: 0;
-	display: flex;
+	transform: translate(-50%);
+	display: inline-flex;
 }
 
 ._nav ul li{
+	margin: 8px;
 	list-style: none;
 }
 
