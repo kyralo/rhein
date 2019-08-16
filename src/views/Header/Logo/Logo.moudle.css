@@ -1,2 +1,29 @@
 ._logo{
+	min-width: 136px;
+	text-transform: uppercase;
+}
+
+._logo a{
+	margin-left: 20px; 
+	color: #000;
+	text-decoration: none;
+}
+
+._logo a span:nth-child(1){
+	font-size: 150%;
+}
+
+._logo a span:nth-child(2){
+	font-size: larger;
+}
+
+._logo a:hover span:nth-child(1){
+	background: #FE9600;
+	color: #fff;
+	transition: 0.5s;
+}
+
+._logo a:hover span:nth-child(2){
+	color: #FE9600;
+	transition: 0.5s;
 }
