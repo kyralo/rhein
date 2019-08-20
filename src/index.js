@@ -7,7 +7,6 @@ import { Provider } from 'react-redux'
 import store from './redux'
 
 import { HashRouter as Router } from 'react-router-dom'
-// import Demo from './components/pravite/Demo'
 
 import Header from './views/Header'
 import Body from './views/Body'
@@ -15,11 +14,11 @@ import Footer from './views/Footer'
 
 const App = (
     <Provider store = {store}>
-        <Router>
-            <Header/>
-            <Body/>
-            <Footer/>
-        </Router>
+		<Router>
+			<Header/>
+			<Body/>
+			<Footer/>
+		</Router>
     </Provider>
 );
 
