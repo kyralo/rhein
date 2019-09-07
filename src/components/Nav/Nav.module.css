@@ -25,6 +25,7 @@
 }
 
 ._nav ul li span:hover{
+	cursor: Pointer;
 	color: #fff;
 }
 

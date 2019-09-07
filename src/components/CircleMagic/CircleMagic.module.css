@@ -1,10 +1,3 @@
-/*body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
-}*/
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -78,6 +71,28 @@
   margin: 20px 0 10px;
 }
 
+.header__heading:hover {
+  cursor: pointer;
+  animation: jelly 0.8s;
+  text-shadow: 2px 1px 2px #cf3535;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
 .full_center {
   padding: 25px 30px;
   position: absolute;
@@ -94,6 +109,13 @@
   font-weight: 300;
 }
 
+.subscribe:hover {
+  cursor: Pointer;
+  text-shadow: 2px 1px 2px #cf3535;
+  transition: 1s;
+}
+
+/*
 .github__block {
   font-weight: 700;
   position: absolute;
@@ -129,7 +151,7 @@
 
 .github__link:hover svg path {
   fill: #a9a9a9;
-}
+}*/
 
 @-webkit-keyframes span {
   0% {
@@ -170,7 +192,8 @@
 .arrow__btn:hover {
   cursor: pointer;;
 }
-.no-margin {
+
+/*.no-margin {
   margin-bottom: 0;
 }
 
@@ -206,4 +229,4 @@
 
 .color {
   font-style: italic;
-}
+}*/

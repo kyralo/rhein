@@ -7,3 +7,18 @@
 body{
 	background: #fff;
 }
+
+
+body::-webkit-scrollbar {
+	display: none;
+    width: 16px;
+    height: 16px;
+    background-color: #fafafa;
+}
+
+
+#root{
+	overflow-x: hidden;
+	overflow-y: auto;
+	/*-webkit-overflow-scrolling: touch;*/
+}
