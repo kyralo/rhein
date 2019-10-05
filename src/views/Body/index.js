@@ -5,7 +5,7 @@ export default class Body extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="_body">
 				<CircleMagic/>
 			</div>
 		);

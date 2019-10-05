@@ -4,8 +4,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.8);
-    box-shadow:0px 3px 3px #c8c8c8 ;
+    background: rgba(255,255,255,0);
+}
+
+._header:hover{
+    background: rgba(255,255,255,0.9);
+    box-shadow:0px 3px 3px #c8c8c8;
+    transition: .5s;
 }
 
 ._logo {

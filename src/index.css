@@ -22,3 +22,30 @@ body::-webkit-scrollbar {
 	overflow-y: auto;
 	/*-webkit-overflow-scrolling: touch;*/
 }
+
+._header{
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+
+._header:hover ._logo a span:nth-child(1){
+	background: #FE9600;
+	border-radius: 12px;
+	color: #fff;
+	transition: 0.5s;
+}
+
+._header:hover ._logo a span:nth-child(2){
+	color: #FE9600;
+	transition: 0.5s;
+}
+
+._header:hover ._content{
+	opacity: 1;
+}
+
+._header:hover ._search img{
+	filter: invert(62%) sepia(92%) saturate(100) hue-rotate(35deg) brightness(300%) contrast(100%);
+	transition: .1s;
+}

@@ -5,11 +5,14 @@
 
 ._logo a{
 	margin-left: 20px;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 
 ._logo a span:nth-child(1){
+	background: #fff;
+	border-radius: 12px;
+	color: #000;
 	font-size: 150%;
 	margin-right: 5px;
 	padding: 5px;
@@ -19,7 +22,7 @@
 	font-size: larger;
 }
 
-._logo a:hover span:nth-child(1){
+/*._logo a:hover span:nth-child(1){
 	background: #FE9600;
 	border-radius: 12px;
 	color: #fff;
@@ -29,4 +32,4 @@
 ._logo a:hover span:nth-child(2){
 	color: #FE9600;
 	transition: 0.5s;
-}
+}*/
