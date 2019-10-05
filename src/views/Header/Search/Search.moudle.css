@@ -3,10 +3,11 @@
 	margin-right: 20px;
 	width: 30px;
 	height: 30px;
-	filter: invert(62%) sepia(92%) saturate(0) hue-rotate(35deg) brightness(2000%) contrast(100%);
+	filter: invert(62%) sepia(92%) saturate(0) hue-rotate(35deg) brightness(0) contrast(100%);
+	opacity: 0;
 }
 
-/*._search img:hover{
+._search img:hover{
 	filter: invert(62%) sepia(92%) saturate(100) hue-rotate(35deg) brightness(300%) contrast(100%);
-	transition: .5s;
-}*/
+	transition: .01s;
+}

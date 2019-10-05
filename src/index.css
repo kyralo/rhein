@@ -46,6 +46,5 @@ body::-webkit-scrollbar {
 }
 
 ._header:hover ._search img{
-	filter: invert(62%) sepia(92%) saturate(100) hue-rotate(35deg) brightness(300%) contrast(100%);
-	transition: .1s;
+	opacity: 1;
 }
