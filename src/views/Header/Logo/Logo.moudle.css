@@ -4,13 +4,15 @@
 }
 
 ._logo a{
-	margin-left: 20px; 
+	margin-left: 20px;
 	color: #000;
 	text-decoration: none;
 }
 
 ._logo a span:nth-child(1){
 	font-size: 150%;
+	margin-right: 5px;
+	padding: 5px;
 }
 
 ._logo a span:nth-child(2){
@@ -19,6 +21,7 @@
 
 ._logo a:hover span:nth-child(1){
 	background: #FE9600;
+	border-radius: 12px;
 	color: #fff;
 	transition: 0.5s;
 }

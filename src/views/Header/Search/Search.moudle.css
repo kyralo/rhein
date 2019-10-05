@@ -1,6 +1,11 @@
 ._search img{
 	float: right;
 	margin-right: 20px;
-	width: 26px;
-	height: 26px;
+	width: 30px;
+	height: 30px;
+}
+
+._search img:hover{
+	filter: invert(52%) sepia(82%) saturate(2494%) hue-rotate(327deg) brightness(104%) contrast(92%);
+	transition: .5s;
 }
