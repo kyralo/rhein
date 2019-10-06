@@ -5,6 +5,8 @@ import styles from './CircleMagic.module.css'
 
 import Download from './img/download.svg'
 
+import Wave from './../Wave'
+
 export default class CircleMagic extends React.Component {
 
     render() {
@@ -13,6 +15,7 @@ export default class CircleMagic extends React.Component {
             <div className="_circleMagic">
             	<div className={styles.wrapper}>
 				    <header className={styles.header}>
+				        <Wave/>
 				        <div className={styles.full_center}>
 				            <h1 className={styles.header__heading}>Rhein</h1>
 				            <h3 className={styles.subscribe}>我连一秒都没有拥有她却感觉失去她千万次.</h3>
