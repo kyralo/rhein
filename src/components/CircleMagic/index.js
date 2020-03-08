@@ -18,7 +18,7 @@ export default class CircleMagic extends React.Component {
 				        <Wave/>
 				        <div className={styles.full_center}>
 				            <h1 className={styles.header__heading}>Rhein</h1>
-				            <h3 className={styles.subscribe}>我连一秒都没有拥有她却感觉失去她千万次.</h3>
+				            <h3 className={styles.subscribe}>一城烟雨一楼台,一花只为一树开.</h3>
 				        </div>
 				        <div className={styles.arrow__btn}>
 				            <img src={Download} alt="" width="50" height="50" className={styles.btn} />
