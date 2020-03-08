@@ -1,18 +1,19 @@
-import { put,takeEvery } from 'redux-saga/effects'
-import { DEL_TODO_ITEM,CALL_SAGA } from './actionTypes'
+/*
+* @Author: 王宸
+* @Date:   2019-12-28 15:46:58
+* @Last Modified by:   王宸
+* @Last Modified time: 2020-01-01 16:30:52
+*/
+import { fork } from 'redux-saga/effects'
 
-function* _sayHello() {
-	const Test = false;
-	yield put({
-		type: DEL_TODO_ITEM,
-		Test
-	})
+
+import userSaga from '@store/user/userSaga'
+import loginSaga from '@store/login/loginSaga'
+
+
+
+
+export default function* Saga() {
+  yield fork(userSaga);
+  yield fork(loginSaga);
 }
-
-function* mySaga(){
-
-	yield takeEvery(CALL_SAGA,_sayHello);
-
-}
-
-export default mySaga;

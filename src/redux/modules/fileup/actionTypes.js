@@ -5,3 +5,5 @@ export const DEL_TODO_ITEM = 'del_todo_item';
 export const CALL_SAGA = 'call_saga';
 
 export const BUTTON_CHANGE = 'button_change';
+
+export const LITS_CHANGE = 'list_change';

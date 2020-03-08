@@ -1,39 +1,21 @@
-import { DEL_TODO_ITEM , BUTTON_CHANGE} from './actionTypes'
+/*
+* @Author: 王宸
+* @Date:   2019-12-28 15:46:49
+* @Last Modified by:   王宸
+* @Last Modified time: 2020-01-02 11:09:16
+*/
 
+import { combineReducers } from 'redux';
 
-//默认数据
-const defaultState = {
-    lists: [
-        'java',
-        'go',
-        'react',
-        'c++',
-        'html',
-        'vue',
-        'python',
-        'ruby',
-        'rust',
-        'css',
-        'js',
-        'php',
-        'nodejs',
-        'hexo'
-    ]
+import user from './modules/user';
+import video from './modules/video';
+
+// 合并到主reducer
+// combineReducers() 函数用于将分离的 reducer 合并为一个 reducer
+const reducers = {
+   user,
+   video
 };
 
-export default (state = defaultState, action) => {
-    const newState = JSON.parse(JSON.stringify(state));
-    switch (action.type) {
-        case DEL_TODO_ITEM:
-            //1.1遍历
-            //1.2处理选中的
-            //1.3更新状态
-            newState.Test = action.Test;
-            return newState;
-        case BUTTON_CHANGE:
-            newState.Test = action.Test;
-            return newState;
-        default:
-            return state;;
-    }
-}
+
+export default combineReducers(reducers);
