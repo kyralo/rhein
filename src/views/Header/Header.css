@@ -1,6 +1,6 @@
 ._header {
     width: 100vw;
-    height: 75px;
+    height: 60px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +8,8 @@
 }
 
 ._header:hover{
-    background: rgba(255,255,255,0.9);
-    box-shadow:0px 3px 3px #c8c8c8;
+    background: rgba(255,255,255,0.98);
+    box-shadow:0px 1.5px 1.5px #c8c8c8;
     transition: .5s;
 }
 

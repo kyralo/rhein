@@ -29,14 +29,3 @@ module.exports = override(
 	    "@store": path.resolve(__dirname, 'src/redux/modules')
 	}),
 );
-
-/* react-app-rewire-yaml */
-
-const rewireYAML = require('react-app-rewire-yaml');
-
-module.exports = function override(config, env) {
-    // ...
-    config = rewireYAML(config, env);
-    // ...
-    return config;
-};

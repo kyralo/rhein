@@ -28,7 +28,7 @@
 }*/
 .bgTop {
     z-index: 15;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -37,7 +37,7 @@
 }
 .bgMiddle {
     z-index: 10;
-    opacity: 0.75;
+    opacity: 0.8;
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -46,6 +46,7 @@
 }
 .bgBottom {
     z-index: 5;
+    opacity: 1.0;
     position: absolute;
     width: 100%;
     overflow: hidden;
@@ -74,7 +75,7 @@
 }
 
 .waveAnimation{
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .waveAnimation .waveTop {
