@@ -1,9 +1,8 @@
 *{
 	padding: 0;
-	font-family: sans-serif;
+	font-family: Arial,Helvetica,sans-serif;
 	box-sizing: border-box;
-    font-size: 15px;
-    line-height: 1.5;
+    line-height: normal;
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/normal.cur),auto;
 }
 
